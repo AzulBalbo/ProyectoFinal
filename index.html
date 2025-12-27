@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bazar Moderno - Tu Tienda de Hogar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <nav class="barra-navegacion">
+        <div class="logo">
+            <h1>VENEZIA BAZAR</h1>
+        </div>
+        <div class="contenedor-carrito-nav">
+            <div class="carrito-icono">
+                <img src="img/shoppingbag.svg" alt="Carrito de compras" class="icono-carrito">
+                <span id="cantidad-total" class="badge-carrito">0</span>
+            </div>
+        </div>
+
+
+
+    </nav>
+
+    <main class="contenedor-principal">
+        <h2 class="titulo-seccion">Nuestros Productos</h2>
+
+        <div class="grilla-productos" id="contenedor-productos"></div>
+
+        <section class="seccion-pago">
+            <h3>Resumen de tu compra</h3>
+            <p>Total acumulado: <strong>$<span id="precio-total-acumulado">0</span></strong></p>
+            <button class="boton-finalizar" onclick="procesarCompra()">Finalizar Pedido</button>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
